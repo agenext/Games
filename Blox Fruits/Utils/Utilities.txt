@@ -70,3 +70,8 @@
 		["Banana"] = "rgb(255, 255, 0)",
 		["Pineapple"] = "rgb(255, 180, 0)",
 	}
+
+    local Teams = {
+		["Pirates"] = "rgb(255, 89, 89)",
+		["Marines"] = "rgb(175, 221, 255)"
+	}
