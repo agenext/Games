@@ -1240,7 +1240,7 @@
 	Title = "Select Team",
 	Description = "",
 	Options = {"Pirates", "Marines"},
-	Default = S["Select Team"]req,
+	Default = S["Select Team"],
 	Multi = false,
 	Callback = function(Value)
 	S["Select Team"] = Value
