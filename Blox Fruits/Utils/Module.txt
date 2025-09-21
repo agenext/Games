@@ -80,12 +80,13 @@
 	}
 	
 	Codes = {
+	-- titles
 		"BIGNEWS",
-		
+	-- money	
 		"Chandler",
 		"fudd10",
 		"fudd10_V2",
-		
+	-- xp	
 		"Sub2Fer999",
 		"LIGHTNINGABUSE",
 		"Enyu_is_Pro",
@@ -102,9 +103,19 @@
 		"Bluxxy",
 		"TantaiGaming",
 		"SUB2GAMERROBOT_EXP1",
-		
+		-- reset
 		"KITT_RESET",
 		"Sub2UncleKizaru",
 		"SUB2GAMERROBOT_RESET1",
 	}
+	
+	FontList = {}
+	
+	for _, font in pairs(Enum.Font:GetEnumItems()) do
+	    table.insert(FontList, font.Name)
+	end
+	
+	table.sort(FontList, function(a, b)
+	    return a:lower() < b:lower()
+	end)
 	
