@@ -63,6 +63,7 @@
 	FlowersData = {
 		["Flower1"] = {Name = "Blue Flower", Color = "rgb(0,0,170)"}, 
 		["Flower2"] = {Name = "Red Flower", Color = "rgb(170,0,0)"},
+		["FireFlower"] = {Name = "Fire Flower", Color = "rgb(rgb(255, 180, 0))"},
 	}
 	
 	FruitColors = {
@@ -119,3 +120,60 @@
 	    return a:lower() < b:lower()
 	end)
 	
+	BonesEnemies = {"Reborn Skeleton","Living Zombie","Demonic Soul","Posessed Mummy"}
+	
+	EctoplasmEnemies = {"Ship Steward", "Ship Engineer", "Ship Deckhand", "Ship Officer"}
+	
+	BossesQuest = {
+		["The Gorilla King"] = {"JungleQuest", 3},
+		["Chef"] = {"BuggyQuest1", 3},
+		["Yeti"] = {"SnowQuest", 3},
+		["Vice Admiral"] = {"MarineQuest2", 2},
+		["Swan"] = {"ImpelQuest", 3},
+		["Chief Warden"] = {"ImpelQuest", 2},
+		["Warden"] = {"ImpelQuest", 1},
+		["Magma Admiral"] = {"MagmaQuest", 3},
+		["Fishman Lord"] = {"FishmanQuest", 3},
+		["Wysper"] = {"SkyExp1Quest", 3},
+		["Thunder God"] = {"SkyExp2Quest", 3},
+		["Cyborg"] = {"FountainQuest", 3},
+		["Diamond"] = {"Area1Quest", 3},
+		["Jeremy"] = {"Area2Quest", 3},
+		["Orbitus"] = {"MarineQuest3", 3},
+		["Smoke Admiral"] = {"IceSideQuest", 3},
+		["Awakened Ice Admiral"] = {"FrostQuest", 3},
+		["Tide Keeper"] = {"ForgottenQuest", 3},
+		["Stone"] = {"PiratePortQuest", 3},
+		["Hydra Leader"] = {"VenomCrewQuest", 3},
+		["Kilo Admiral"] = {"MarineTreeIsland", 3},
+		["Captain Elephant"] = {"DeepForestIsland", 3},
+		["Cake Queen"] = {"IceCreamIslandQuest", 3},
+	}
+	
+	Monsters = {}
+        Monsters["Radioactive Material"] = {"Factory Staff"}
+		Monsters["Mystic Droplet"] = {"Water Fighter", "Sea Soldier"}
+		if Sea1 then
+			Monsters["Magma Ore"] = {"Military Spy", "Military Soldier", "Magma Admiral"}
+		elseif Sea2 then
+			Monsters["Magma Ore"] = {"Magma Ninja", "Lava Pirate"}
+		end
+		Monsters["Angel Wings"] = {"God's Guard", "Shanda", "Royal Squard", "Royal Soldier", "Wysepr", "Thunder God"}
+		if Sea1 then
+			Monsters["Scrap Metal/Leather"] = {"Brute", "Pirate"}
+		elseif Sea2 then
+			Monsters["Scrap Metal/Leather"] = {"Gladiator", "Mercenary"}
+		elseif Sea3 then
+			Monsters["Scrap Metal/Leather"] = {"Pirate Millionaire", "Pistol Billionaire"}
+		end
+		if Sea1 then
+			Monsters["Fish Tail"] = {"Fishman Warrior", "Fishman Commando", "Fishman Lord"}
+		elseif Sea3 then
+			Monsters["Fish Tail"] = {"Fishman Raider", "Fishman Captain"}
+		end
+		Monsters["Demonic Wisp"] = {"Demonic Soul"}
+		Monsters["Vampire Fang"] = {"Vampire"}
+		Monsters["Conjured Cocoa"] = {"Chocolate Bar Battler", "Cocoa Warrior"}
+		Monsters["Gunpowder"] = {"Pistol Billionaire"}
+		Monsters["Mini Tusk"] = {"Mythological Pirate"}
+		Monsters["Dragon Scale"] = {"Dragon Crew Archer", "Dragon Crew Warrior"}
