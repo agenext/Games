@@ -7,6 +7,7 @@
 		["rbxassetid://15123677932"] = {Name = "Smoke Fruit", Image = "rbxassetid://99523390558254", Rarity = "Common"},
 		["rbxassetid://15124220207"] = {Name = "Spike Fruit", Image = "rbxassetid://124890777809197", Rarity = "Common"},
 		["rbxassetid://121545956771325"] = {Name = "Flame Fruit", Image = "rbxassetid://97880651761965", Rarity = "Uncommon"},
+		["rbxassetid://15123629861"] = {Name = "Flame Fruit", Image = "rbxassetid://97880651761965", Rarity = "Uncommon"},
 		["rbxassetid://15100433167"] = {Name = "Ice Fruit", Image = "rbxassetid://136877468840396", Rarity = "Uncommon"},
 		["rbxassetid://15123673019"] = {Name = "Sand Fruit", Image = "rbxassetid://93883477293511", Rarity = "Uncommon"},
 		["rbxassetid://15123618591"] = {Name = "Dark Fruit", Image = "rbxassetid://115322940089418", Rarity = "Uncommon"},
@@ -150,7 +151,8 @@
 		["Cake Queen"] = {"IceCreamIslandQuest", 3},
 	}
 	
-	Monsters = {}
+	function MaterialMon()
+	    Monsters = {}
         Monsters["Radioactive Material"] = {"Factory Staff"}
 		Monsters["Mystic Droplet"] = {"Water Fighter", "Sea Soldier"}
 		if Sea1 then
@@ -177,3 +179,37 @@
 		Monsters["Gunpowder"] = {"Pistol Billionaire"}
 		Monsters["Mini Tusk"] = {"Mythological Pirate"}
 		Monsters["Dragon Scale"] = {"Dragon Crew Archer", "Dragon Crew Warrior"}
+		Monsters["Nightmare Catcher"] = {"Living Zombie"}
+		return Monsters[_G.SelectMaterial]
+	end
+	
+	if Sea1 then
+	    MaterialList = {
+	        "Scrap Metal/Leather",
+	        "Angel Wings",
+	        "Magma Ore",
+	        "Fish Tail"
+	    }
+	elseif Sea2 then
+	    MaterialList = {
+	        "Scrap Metal/Leather",
+	        "Radioactive Material",
+	        "Mystic Droplet",
+	        "Magma Ore",
+	        "Vampire Fang"
+	    }
+	elseif Sea3 then
+	    MaterialList = {
+	        "Scrap Metal/Leather",
+	        "Demonic Wisp",
+	        "Conjured Cocoa",
+	        "Dragon Scale",
+	        "Gunpowder",
+	        "Fish Tail",
+	        "Mini Tusk",
+			"Nightmare Catcher",
+	    }
+	end
+	
+	table.sort(MaterialList, function(a, b) return a:lower() < b:lower() end)
+	
