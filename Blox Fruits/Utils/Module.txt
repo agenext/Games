@@ -151,65 +151,27 @@
 		["Cake Queen"] = {"IceCreamIslandQuest", 3},
 	}
 	
-	function MaterialMon()
-	    Monsters = {}
-        Monsters["Radioactive Material"] = {"Factory Staff"}
-		Monsters["Mystic Droplet"] = {"Water Fighter", "Sea Soldier"}
-		if Sea1 then
-			Monsters["Magma Ore"] = {"Military Spy", "Military Soldier", "Magma Admiral"}
-		elseif Sea2 then
-			Monsters["Magma Ore"] = {"Magma Ninja", "Lava Pirate"}
-		end
-		Monsters["Angel Wings"] = {"God's Guard", "Shanda", "Royal Squard", "Royal Soldier", "Wysepr", "Thunder God"}
-		if Sea1 then
-			Monsters["Scrap Metal/Leather"] = {"Brute", "Pirate"}
-		elseif Sea2 then
-			Monsters["Scrap Metal/Leather"] = {"Gladiator", "Mercenary"}
-		elseif Sea3 then
-			Monsters["Scrap Metal/Leather"] = {"Pirate Millionaire", "Pistol Billionaire"}
-		end
-		if Sea1 then
-			Monsters["Fish Tail"] = {"Fishman Warrior", "Fishman Commando", "Fishman Lord"}
-		elseif Sea3 then
-			Monsters["Fish Tail"] = {"Fishman Raider", "Fishman Captain"}
-		end
-		Monsters["Demonic Wisp"] = {"Demonic Soul"}
-		Monsters["Vampire Fang"] = {"Vampire"}
-		Monsters["Conjured Cocoa"] = {"Chocolate Bar Battler", "Cocoa Warrior"}
-		Monsters["Gunpowder"] = {"Pistol Billionaire"}
-		Monsters["Mini Tusk"] = {"Mythological Pirate"}
-		Monsters["Dragon Scale"] = {"Dragon Crew Archer", "Dragon Crew Warrior"}
-		Monsters["Nightmare Catcher"] = {"Living Zombie"}
-		return Monsters[_G.SelectMaterial]
-	end
+	RaidEnemies = {
+	    "Galley Pirate",
+	    "Galley Captain",
+	    "Raider",
+	    "Mercenary",
+	    "Vampire",
+	    "Zombie",
+	    "Snow Trooper",
+	    "Winter Warrior",
+	    "Lab Subordinate",
+	    "Horned Warrior",
+	    "Magma Ninja",
+	    "Lava Pirate",
+	    "Ship Deckhand",
+	    "Ship Engineer",
+	    "Ship Steward",
+	    "Ship Officer",
+	    "Arctic Warrior",
+	    "Snow Lurker",
+	    "Sea Soldier",
+	    "Water Fighter"
+	}
 	
-	if Sea1 then
-	    MaterialList = {
-	        "Scrap Metal/Leather",
-	        "Angel Wings",
-	        "Magma Ore",
-	        "Fish Tail"
-	    }
-	elseif Sea2 then
-	    MaterialList = {
-	        "Scrap Metal/Leather",
-	        "Radioactive Material",
-	        "Mystic Droplet",
-	        "Magma Ore",
-	        "Vampire Fang"
-	    }
-	elseif Sea3 then
-	    MaterialList = {
-	        "Scrap Metal/Leather",
-	        "Demonic Wisp",
-	        "Conjured Cocoa",
-	        "Dragon Scale",
-	        "Gunpowder",
-	        "Fish Tail",
-	        "Mini Tusk",
-			"Nightmare Catcher",
-	    }
-	end
-	
-	table.sort(MaterialList, function(a, b) return a:lower() < b:lower() end)
-	
+	KatakuriEnemies = {"Cookie Crafter", "Cake Guard", "Baking Staff", "Head Baker"}
