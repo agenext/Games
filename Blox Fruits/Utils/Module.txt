@@ -175,3 +175,5 @@
 	}
 	
 	KatakuriEnemies = {"Cookie Crafter", "Cake Guard", "Baking Staff", "Head Baker"}
+	EagleEnemies = { "Isle Outlaw", "Island Boy", "Isle Champion", "Serpent Hunter", "Skull Slayer"}
+	RengokuEnemies = {"Arctic Warrior", "Snow Lurker"}
